@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container{
+            box-shadow: 2px 2px 5px rgba(0, 0, 0,  0.452);
+            height: 530px;
+            width: 500px;
+            overflow: hidden;
+        }
+        .imgContainer{
+            display: flex;
+            transition:transform 0.7s ease-in-out;
+            transform: translateX(0px);
+        }
+        .imgContainer img{
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+        }
+        .buttonsContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            border: none;
+            background-color: royalblue;
+            color: #fff;
+            cursor: pointer;
+            padding: 0.5rem;
+            width: 49%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgContainer" id="imgs">
+            <img src="./images/3.jpg" alt="">
+            <img src="./images/akii.jpg" alt="">
+            <img src="./images/august5.jpg" alt="">
+            <img src="./images/anime.jpg" alt="">
+            <img src="./images/denji.jpg" alt="">
+        </div>
+        <div class="buttonsContainer">
+            <button id="left">prev</button>
+            <button id="right">next</button>
+        </div>
+    </div>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
